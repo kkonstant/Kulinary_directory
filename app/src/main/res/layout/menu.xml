@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:columnCount="14"
+    android:rowCount="9"
+    android:id="@+id/grid"
+    android:orientation="vertical"
+    android:background="@color/bright_foreground_disabled_material_dark">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:layout_row="3"
+        android:layout_column="13"
+        android:textColor="#ffff411f"
+        android:textSize="@android:dimen/notification_large_icon_width"
+        android:gravity="center"
+        android:text="МЕНЮ" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" ПЕРВЫЕ БЛЮДА"
+        android:id="@+id/button"
+        android:layout_row="4"
+        android:layout_column="12"
+        android:layout_columnSpan="2"
+        android:textSize="@dimen/abc_dropdownitem_icon_width"
+        android:clickable="false"
+        android:background="@drawable/rectangle_rounded_all"
+        android:textColor="#ffffe366" />
+
+    <Button
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" ВТОРЫЕ БЛЮДА"
+        android:id="@+id/button2"
+        android:layout_row="5"
+        android:layout_column="13"
+        android:textSize="@dimen/abc_dropdownitem_icon_width"
+        android:textColor="#ffffe366"
+        android:background="@drawable/rectangle_rounded_all"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" ДЕСЕРТЫ"
+        android:id="@+id/button3"
+        android:layout_row="6"
+        android:layout_column="13"
+        android:textSize="@dimen/abc_dropdownitem_icon_width"
+        android:textColor="#ffffe366"
+        android:background="@drawable/batton_background"
+        android:onClick="showDesserts" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" НАПИТКИ"
+        android:id="@+id/button4"
+        android:layout_row="7"
+        android:layout_column="13"
+        android:textSize="@dimen/abc_dropdownitem_icon_width"
+        android:textColor="#ffffe366"
+        android:background="@drawable/rectangle_rounded_all"/>
+
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="260dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/foto_baby_kulinar"
+        android:layout_row="8"
+        android:layout_column="13" />
+</GridLayout>
